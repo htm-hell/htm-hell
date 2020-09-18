@@ -1,0 +1,45 @@
+hr {
+            position: absolute;
+            border: none;
+            height: 10px;
+            display: block;
+            background: black;
+            margin: 0px;
+        }
+
+        .container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  }
+
+
+  .start {
+      width: 60px;
+      height: 30px;
+      left-margin: 20px;
+      right-margin: 10px;
+      top-margin: 15px;
+      bottom-margin: 20px;
+  }
+
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+        img {
+            max-width: 400px;
+            max-height: 400px;
+        }
