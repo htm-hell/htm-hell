@@ -1,0 +1,99 @@
+body {
+    background-color: #F5D6C6;
+    margin: auto;
+    margin-top: 10px;
+    width: 60%; 
+    padding: 10px;
+    text-align: center;
+}
+
+.div1 {
+   visibility: hidden;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+#try1 {
+    position: absolute; 
+    visibility: visible; 
+    left: 90px; 
+    top: 300px; 
+    /* z-index: 200; */
+}
+
+#try5 {
+    position: absolute; 
+    visibility: visible; 
+    left: 370px; 
+    top: 600px;
+}
+
+#try6 {
+    position: absolute;
+    visibility: visible;
+    top: 170px;
+    left: 330px;
+}
+
+#try1 input, #try3 input, #try6 input {
+    background-color: #F5D6C6;
+    border: 2px solid #F5D6C6;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+}
+
+#try2 {
+    position: absolute; 
+    visibility: visible; 
+    right: 340px; 
+    top: 480px; 
+    /* z-index: 200; */
+}
+
+#try2 input, #try4 input{
+    background-color: #F5D6C6;
+    border: 2px solid #F5D6C6;
+    cursor: pointer;
+    height: 45px;
+    width: 80px;
+}
+
+#try5 input {
+    background-color: #F5D6C6;
+    border: 2px solid #F5D6C6;
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+}
+
+#try3 {
+    position: absolute; 
+    visibility: visible; 
+    right: 130px; 
+    top: 190px; 
+}
+
+#try4 {
+   position: absolute; 
+   visibility: visible;
+   right: 320px; 
+   top: 700px; 
+}
+
+button {
+    top: 695px;
+    right: 410px;
+    background-color: #F5D6C6;
+    border: 2px solid #F5D6C6;
+    color: #F5D6C6;
+    cursor: pointer;
+    position: absolute;
+}
+
+img {
+    width: 550px;
+    height: 600px;
+}
