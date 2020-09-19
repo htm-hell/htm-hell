@@ -7,13 +7,15 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         document.getElementById('dice-2').style.display = 'block';
         document.getElementById('dice-1').src = 'dice-' + dice1 + '.png';
         document.getElementById('dice-2').src = 'dice-' + dice2 + '.png';
-        console.log(dice1 + dice2);
-        if(dice1 + dice2 < 8)
-        {
-          window.location.replace("pag1.html");
-      }else {
-          window.location.replace("pag4.html");
-        }
+        setTimeout(function(){
+          if(dice1 + dice2 < 8)
+          {
+            window.location.replace("pag1.html");
+        }else {
+            window.location.replace("pag4.html");
+          }
+        },2000);
+
 });
 
 function init() {
