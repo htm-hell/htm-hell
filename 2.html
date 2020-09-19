@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="2.css">
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  <title>Document</title>
+</head>
+<body>
+  <script src="script2.js"></script>
+
+<p style="text-align:center;"> DO NOT TOUCH THE WALLS!! <br>
+(warning)</p>
+
+<img class="center" height="400px" width="400px" src="maze3.png"   usemap="#mazemap">
+
+<!--
+<img class="center" src="maze.png" width="400px" height="400px" usemap="#mazemap">
+
+<hr  width="300px" align="left" top="10px" onmouseover="lose()">
+<hr  width="300px" align="left"  onmouseover="lose()">
+-->
+
+<map name="mazemap">
+  <!--
+   <area shape="rect" coords="0, 0, 400, 18" onmouseover="lose()">
+   <area shape="rect" coords="0, 0, 16, 65" onmouseover="lose()">
+   <area shape="rect" coords="0, 30, 40, 48" onmouseover="lose()">
+   <area shape="rect" coords="0, 0, 400, 18" onmouseover="lose()">
+   <area shape="rect" coords="0, 0, 400, 18" onmouseover="lose()">
+   <area shape="rect" coords="0, 0, 400, 18" onmouseover="lose()">
+    -->
+    <area shape="rect" coords="10, 64, 30, 109" onmouseover="start()">
+    <area shape="rect" coords="0, 64, 9, 109" onmouseover="exit()">
+    <area shape="rect" coords="368, 350, 400, 400" onmouseover="end()">
+
+    <area shape="rect" coords="0, 0, 400, 16" onmouseover="lose()">
+    <area shape="rect" coords="0, 0, 16, 63" onmouseover="lose()">
+    <area shape="rect" coords="0, 30, 50, 47" onmouseover="lose()">
+    <area shape="rect" coords="33, 30, 50, 80" onmouseover="lose()">
+    <area shape="rect" coords="33, 63, 81, 80" onmouseover="lose()">
+    <area shape="rect" coords="63, 17, 79, 48" onmouseover="lose()">
+    <area shape="rect" coords="63, 32, 112, 48" onmouseover="lose()">
+    <area shape="rect" coords="96, 32, 112, 111" onmouseover="lose()">
+    <area shape="rect" coords="33, 95, 176, 110" onmouseover="lose()">
+    <area shape="rect" coords="160, 31, 176, 174" onmouseover="lose()">
+
+    <area shape="rect" coords="128, 31, 176, 46" onmouseover="lose()">
+    <area shape="rect" coords="128, 31, 144, 79" onmouseover="lose()">
+    <area shape="rect" coords="224, 0, 240, 47" onmouseover="lose()">
+    <area shape="rect" coords="383, 0, 400, 349" onmouseover="lose()">
+    <area shape="rect" coords="352, 31, 400, 48" onmouseover="lose()">
+
+    <area shape="rect" coords="287, 62, 400, 78" onmouseover="lose()">
+    <area shape="rect" coords="333, 70, 351, 110" onmouseover="lose()">
+    <area shape="rect" coords="319, 95, 366, 110" onmouseover="lose()">
+
+    <area shape="rect" coords="287, 62, 303, 111" onmouseover="lose()">
+    <area shape="rect" coords="256, 95, 303, 111" onmouseover="lose()">
+    <area shape="rect" coords="256, 95, 272, 143" onmouseover="lose()">
+
+    <area shape="rect" coords="256, 127, 303, 143" onmouseover="lose()">
+    <area shape="rect" coords="287, 127, 303, 206" onmouseover="lose()">
+
+
+    <area shape="rect" coords="287, 158, 367, 174" onmouseover="lose()">
+
+
+    <area shape="rect" coords="319, 127, 400, 144" onmouseover="lose()">
+    <area shape="rect" coords="351, 317, 400, 334" onmouseover="lose()">
+    <area shape="rect" coords="351, 317, 367, 366" onmouseover="lose()">
+    <area shape="rect" coords="0, 111, 17, 400" onmouseover="lose()">
+    <area shape="rect" coords="0, 158, 48, 174" onmouseover="lose()">
+    <area shape="rect" coords="32, 158, 48, 207" onmouseover="lose()">
+    <area shape="rect" coords="0, 222, 80, 238" onmouseover="lose()">
+    <area shape="rect" coords="64, 191, 80, 238" onmouseover="lose()">
+    <area shape="rect" coords="0, 255, 48, 271" onmouseover="lose()">
+    <area shape="rect" coords="0, 383, 366, 400" onmouseover="lose()">
+    <area shape="rect" coords="128, 222, 144, 400" onmouseover="lose()">
+    <area shape="rect" coords="65, 317, 144, 333" onmouseover="lose()">
+
+    <area shape="rect" coords="32, 286, 207, 301" onmouseover="lose()">
+    <area shape="rect" coords="32, 286, 48, 366" onmouseover="lose()">
+    <area shape="rect" coords="32, 350, 112, 366" onmouseover="lose()">
+    <area shape="rect" coords="160, 286, 176, 365" onmouseover="lose()">
+    <area shape="rect" coords="65, 255, 80, 302" onmouseover="lose()">
+    <area shape="rect" coords="65, 255, 112, 271" onmouseover="lose()">
+    <area shape="rect" coords="96, 158, 112, 271" onmouseover="lose()">
+
+    <area shape="rect" coords="65, 159, 112, 175" onmouseover="lose()">
+    <area shape="rect" coords="128, 222, 207, 238" onmouseover="lose()">
+    <area shape="rect" coords="192, 32, 206, 238" onmouseover="lose()">
+    <area shape="rect" coords="128, 189, 207, 206" onmouseover="lose()">
+    <area shape="rect" coords="128, 127, 144, 206" onmouseover="lose()">
+    <area shape="rect" coords="32, 128, 144, 143" onmouseover="lose()">
+    <area shape="rect" coords="192, 95, 240, 110" onmouseover="lose()">
+    <area shape="rect" coords="224, 64, 240, 175" onmouseover="lose()">
+    <area shape="rect" coords="224, 159, 272, 174" onmouseover="lose()">
+    <area shape="rect" coords="224, 64, 272, 79" onmouseover="lose()">
+    <area shape="rect" coords="256, 31, 272, 79" onmouseover="lose()">
+    <area shape="rect" coords="256, 31, 334, 46" onmouseover="lose()">
+    <area shape="rect" coords="287, 350, 304, 400" onmouseover="lose()">
+    <area shape="rect" coords="192, 350, 303, 365" onmouseover="lose()">
+    <area shape="rect" coords="256, 255, 272, 366" onmouseover="lose()">
+    <area shape="rect" coords="192, 317, 272, 332" onmouseover="lose()">
+    <area shape="rect" coords="224, 286, 272, 301" onmouseover="lose()">
+    <area shape="rect" coords="160, 255, 303, 270" onmouseover="lose()">
+    <area shape="rect" coords="224, 223, 240, 271" onmouseover="lose()">
+    <area shape="rect" coords="320, 286, 335, 365" onmouseover="lose()">
+    <area shape="rect" coords="287, 317, 335, 333" onmouseover="lose()">
+    <area shape="rect" coords="287, 286, 302, 333" onmouseover="lose()">
+    <area shape="rect" coords="320, 286, 367, 301" onmouseover="lose()">
+    <area shape="rect" coords="319, 255, 367, 270" onmouseover="lose()">
+    <area shape="rect" coords="351, 190, 367, 301" onmouseover="lose()">
+    <area shape="rect" coords="318, 190, 367, 206" onmouseover="lose()">
+    <area shape="rect" coords="318, 190, 334, 238" onmouseover="lose()">
+    <area shape="rect" coords="256, 223, 334, 238" onmouseover="lose()">
+    <area shape="rect" coords="224, 190, 272, 206" onmouseover="lose()">
+    <area shape="rect" coords="257, 190, 272, 238" onmouseover="lose()">
+    <area shape="rect" coords="0, 0, 0, 0" onmouseover="lose()">
+
+
+
+
+    <!--
+     <area shape="rect" coords="0, 0, 400, 15" onmouseover="lose()">
+     <area shape="rect" coords="0, 0, 15, 52" onmouseover="lose()">
+     <area shape="rect" coords="17, 25, 42, 40" onmouseover="lose()">
+     <area shape="rect" coords="26, 40, 42, 65" onmouseover="lose()">
+     <area shape="rect" coords="34, 50, 68, 65" onmouseover="lose()">
+     <area shape="rect" coords="51, 0, 66, 40" onmouseover="lose()">
+     <area shape="rect" coords="51, 25, 92, 40" onmouseover="lose()">
+     <area shape="rect" coords="78, 40, 92, 90" onmouseover="lose()">
+     <area shape="rect" coords="26, 77, 143, 90" onmouseover="lose()">
+     <area shape="rect" coords="130, 25, 143, 143" onmouseover="lose()">
+     <area shape="rect" coords="103, 25, 140, 40" onmouseover="lose()">
+     <area shape="rect" coords="103, 25, 118, 65" onmouseover="lose()">
+     <area shape="rect" coords="0, 0, 400, 15" onmouseover="lose()">
+</map>
+
+  -->
+</body>
+</html>
