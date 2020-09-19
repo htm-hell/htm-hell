@@ -1,4 +1,8 @@
 
+body {
+    font-family: 'Anton';font-size: 22px;
+}
+
 span {
     display: block;
     padding: 20px;
@@ -6,12 +10,17 @@ span {
 }
 
 .center {
-  position: absolute;
+  position: relative;
   top: 0%;
   width: 100%;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
 }
+
+div {
+cursor: default;
+    }
+
 
 <style type="text/css" scoped>
 .GeneratedMarquee {

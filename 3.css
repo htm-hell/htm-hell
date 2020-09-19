@@ -1,5 +1,18 @@
+body {
+    font-family: 'Anton';font-size: 22px;
+
+}
+
 button{
     position:absolute;
     top:10px;
     left:10px;
 }​
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center
+  width: 50%;
+}
