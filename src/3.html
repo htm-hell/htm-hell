@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+    crossorigin="anonymous"
+  />
+  <script>
+    /*document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });*/
+    function switchLight(num) {
+      output.innerText = output.innerText + num;
+    }
+    function check() {
+      var x = output.innerText;
+      if (x === "40755850232") {
+        //Give me a call!! +40755850232
+        window.location.href = "4.html";
+      } else {
+        output.innerText = output.innerText.substring(output.innerText.length);
+      }
+    }
+    function erase() {
+      var length = output.innerText.length;
+      output.innerText = output.innerText.substring(0, length - 1);
+    }
+  </script>
+  <body align="center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="#" name="one" onclick="switchLight(1)" />
+        </div>
+        <div class="col-md-4">
+          <img src="#" name="two" onclick="switchLight(2)" />
+        </div>
+        <div class="col-md-4">
+          <img src="#" name="three" onclick="switchLight(3)" />
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-4">
+          <img src="#" name="" onclick="switchLight(4)" />
+        </div>
+        <div class="col-md-4">
+          <img src="#" name="" onclick="switchLight(5)" />
+        </div>
+        <div class="col-md-4">
+          <img src="#" name="" onclick="switchLight(6)" />
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-4">
+          <img src="#" name="" onclick="switchLight(7)" />
+        </div>
+        <div class="col-md-4">
+          <img src="#" name="" onclick="switchLight(8)" />
+        </div>
+        <div class="col-md-4">
+          <img src="#" name="" onclick="switchLight(9)" />
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-12"><img src="#" onclick="switchLight(0)" /></div>
+      </div>
+      <br />
+      <br />
+      <button type="button" onclick="check()">Dial</button>
+      <button type="button" onclick="erase()">Backspace</button>
+      <h1 id="output"></h1>
+    </div>
+  </body>
+</html>
