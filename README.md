@@ -1,5 +1,7 @@
-#HTM-HELL README.md
+#### Foreword
 
+This game is made during SillyHacks, a fun hackathon. 
+By [Alex](github.com/Tvveeck), [Lixy](github.com/lixy3), [Rakha](github.com/rakhadjo) and [Razvan](github.com/razvanpopescu00).
 
 # HTM-HELL is a website that serves as a multiple-level fun game.
 
@@ -7,7 +9,11 @@ The way this works is that each page represents a level. Upon completening the l
 you will move on the next and so on. In most of the levels, if you lose, you will be sent
 back to the previous page and sometimes even a few pages behind. 
 
-# Level's solutions:
+## Tech Stack
+All pages are built with <b>HTML, CSS, JS</b>. Some pages use <b>Bootstrap</b>. Website hosted at <b>Heroku</b>. 
+<b>PHP</b> used as a workaround to support hosting. 
+
+### Level's solutions:
 _Level 1_ is a simple button selection game. The text reads "Press the Green OR Blue Button"
 therefore any button of the colour blue or green is the correct one. The "Press this button to begin:"
 text is meant to confuse the player. If pressed, a new page will show saying that they failed, but
@@ -76,3 +82,6 @@ The answer is the '2' right on the problem line!
 
 _Level 16_ is a maze game. Simply follow the route to the finish, and you'll have finally completed HTM-HELL! Attached
 is the finish route.
+
+<img src="/maze_sol1.png" width="200" height="200">
+<img src="/maze_sol2.png" width="200" height="200">
