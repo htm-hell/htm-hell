@@ -59,12 +59,20 @@ function validateNumber() {
     var x, text;
     x = document.getElementById("numb").value;
   
-    if (isNaN(x) || x != 5) {
+    if (isNaN(x) || x != 11) {
       text = "Input not valid";
-      location.replace("/Users/razvanpopescu/SillyHacks/ht-maze-l/Page3/3.html");
+      location.replace("5.html");
     } else {
       text = "Good job!".bold();
       document.getElementById("valid").style.visibility = "visible";
     }
     document.getElementById("demo").innerHTML = text;
   }
+
+  function changePage() {
+    location.replace("7.html");
+  }
+
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
