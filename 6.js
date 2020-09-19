@@ -59,7 +59,7 @@ function validateNumber() {
     var x, text;
     x = document.getElementById("numb").value;
   
-    if (isNaN(x) || x != 11) {
+    if (isNaN(x) || x != 10) {
       text = "Input not valid";
       location.replace("5.html");
     } else {
