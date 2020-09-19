@@ -14,7 +14,7 @@
     <h3 id="guessDisplay">1</h3>
     <div class="form">
       <label for="guessField">Enter a guess: </label>
-      <input requre type="text" id="guessField" class="guessField" />
+      <input require type="text" id="guessField" class="guessField" />
       <input
         type="submit"
         value="Submit guess"
@@ -42,14 +42,12 @@
         );
         window.location.href = "3.html";
       } else if (x > y) {
-        /* if guessed number is greater 
-                   than actual number*/
-        guess++;
         alert("OOPS SORRY!! TRY A SMALLER NUMBER");
       } else {
-        guess++;
         alert("OOPS SORRY!! TRY A GREATER NUMBER");
       }
+      document.getElementById("guessField").value = "";
+      guess++;
       guessDisplay.innerText = guess;
     };
   </script>
