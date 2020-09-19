@@ -2,7 +2,7 @@ var ok=0;
 function lose() {
   if (ok === 1) {
     ok=0;
-  window.location.href = "11.html";
+  window.location.href = "6512bd43d9caa6e02c990b0a82652dca.html";
 }
 }
 function exit(){

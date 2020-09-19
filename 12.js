@@ -4,7 +4,7 @@ function onClick(){
   counter += 1;
   console.log("Clicked");
   if(counter === 12){
-      window.location.replace("13.html");
+      window.location.replace("c51ce410c124a10e0db5e4b97fc2af39.html");
     }
     var btn = document.getElementById("btn");
     btn.style.position = "relative";
@@ -18,7 +18,7 @@ var x = setInterval(function() {
   distance -= 1;
 
   if (distance < 0) {
-    window.location.replace("7.html");
+    window.location.replace("8f14e45fceea167a5a36dedd4bea2543.html");
   }
 }, 1000);
 

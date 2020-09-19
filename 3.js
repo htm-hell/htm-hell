@@ -11,7 +11,7 @@ var distance=30;
 
 function onClick(){
   if(distance < 3)
-    window.location.href = "4.html";
+    window.location.href = "a87ff679a2f3e71d9181a67b7542122c.html";
 }
 
 function run() {
