@@ -2,7 +2,7 @@ var ok=0;
 function lose() {
   if (ok === 1) {
     ok=0;
-  window.location.href = "1.html";
+  window.location.href = "11.html";
 }
 }
 function exit(){
@@ -15,7 +15,11 @@ function start() {
 
 function end() {
   if ( ok === 1 ){
-    window.location.href = "3.html";
+    window.location.href = "final.html";
   }
 
 }
+
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});

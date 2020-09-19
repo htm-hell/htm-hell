@@ -10,9 +10,9 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         setTimeout(function(){
           if(dice1 + dice2 < 8)
           {
-            window.location.replace("pag1.html");
+            window.location.replace("4.html");
         }else {
-            window.location.replace("pag4.html");
+            window.location.replace("6.html");
           }
         },2000);
 
@@ -24,3 +24,7 @@ function init() {
     document.getElementById('dice-1').style.display = 'none';
     document.getElementById('dice-2').style.display = 'none';
 }
+
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});

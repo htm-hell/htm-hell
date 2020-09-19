@@ -11,7 +11,7 @@ var distance=30;
 
 function onClick(){
   if(distance < 3)
-    window.location.href = "1.html";
+    window.location.href = "4.html";
 }
 
 function run() {
@@ -33,7 +33,7 @@ function run() {
     if(distance > 1){
     btn.style.left = Math.floor((Math.random() * 800)) + "px";
    btn.style.top = Math.floor((Math.random() * 600)) + "px";
-    distance=30;
+    distance=20;
     }
 
 }
@@ -64,3 +64,7 @@ var x = setInterval(function() {
     distance = 30;
   }
 }, 1000);
+
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
