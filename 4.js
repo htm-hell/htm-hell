@@ -3,3 +3,7 @@ function myFunctionBoo() {
     var audio = document.getElementById("audio");
     audio.play();
 }
+
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });

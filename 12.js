@@ -3,8 +3,8 @@ var counter = 0;
 function onClick(){
   counter += 1;
   console.log("Clicked");
-  if(counter === 15){
-      window.location.replace("pag4.html");
+  if(counter === 12){
+      window.location.replace("13.html");
     }
     var btn = document.getElementById("btn");
     btn.style.position = "relative";
@@ -18,6 +18,10 @@ var x = setInterval(function() {
   distance -= 1;
 
   if (distance < 0) {
-    window.location.replace("pag1.html");
+    window.location.replace("7.html");
   }
 }, 1000);
+
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
