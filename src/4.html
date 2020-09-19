@@ -30,7 +30,7 @@
       var lover2 = document.getElementById("lover2").value;
       if (lover1 === "Love" && lover2 == "Calculator") {
         window.location.href = "5.html";
-      } else {
+      } else if (lover1 || lover2) {
         results.innerText = Math.floor(Math.random() * 100 + 1) + "% !";
         var key = Math.floor(Math.random() * 5 + 1);
         var quote = "SDsasdF";
@@ -54,6 +54,12 @@
             break;
         }
         message.innerText = quote;
+      } else {
+        results.innerText = results.innerText.substring(
+          results.innerText.length
+        );
+
+        message.innerText = "Enter names!";
       }
     }
   </script>
