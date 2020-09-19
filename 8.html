@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Number of 3's in the pag3 </title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<style>
-body {
-    margin: auto;
-    margin-top: 30px;
-    width: 60%; 
-    padding: 10px;
-    text-align: center;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Number of 3's in the pag3</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: auto;
+        margin-top: 30px;
+        width: 60%;
+        padding: 10px;
+        text-align: center;
+      }
 
-a:hover{
-  text-decoration: none;
-  }
-div{
-  height: 110px;
-}
-.background{
-  background-image: linear-gradient(#F5D6C6, #e4efe9);
-}
+      a:hover {
+        text-decoration: none;
+      }
+      div {
+        height: 110px;
+      }
+      .background {
+        background-image: linear-gradient(#f5d6c6, #e4efe9);
+      }
 
-#h1{
-  font-size: 40px;
-}
-</style>
-</head>
-<body class="background">
-
-<h1>Count the 3's.</h1>
-<h1 id="h1">Disclaimer: You may ne3d to insp3ct the image clos3ly!!</h1>
-<img class="center" src="someimage.png">
-<br>
-<h2>How many do you see?</h2>
-<div>
-<a href="7.html"><button class="buttons"> 3 </button> </a>
-<a href="7.html"><button class="buttons"> 6 </button> </a>
-<a href="9.html"><button class="buttons"> 7 </button> </a>
-<a href="7.html"><button class="buttons"> 11 </button> </a>
-</div>
-</body>
+      #h1 {
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body class="background">
+    <h1>Count the 3's.</h1>
+    <h1 id="h1">Disclaimer: You may ne3d to insp3ct the image clos3ly!!</h1>
+    <img class="center" src="someimage.png" />
+    <br />
+    <h2>How many do you see?</h2>
+    <div>
+      <button type="button" class="btn btn-primary" onClick="fail()">3</button>
+      <button type="button" class="btn btn-primary" onClick="fail()">6</button>
+      <button type="button" class="btn btn-primary" onClick="proceed()">
+        7
+      </button>
+      <button type="button" class="btn btn-primary" onClick="fail()">11</button>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+    function fail() {
+      window.location.href = "7.html";
+    }
+    function proceed() {
+      window.location.href = "9.html";
+    }
+  </script>
 </html>
