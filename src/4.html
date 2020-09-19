@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <header align="center">
+    <h1>Love + Calculator!!</h1>
+  </header>
+  <body>
+    <div align="center">
+      Enter Your Name: <input type="text" id="lover1" /> <br />
+      Enter Lover's Name: <input type="text" id="lover2" /> <br />
+      <br />
+      <button type="button" onclick="calculate()">Calculate!!</button>
+      <br /><br />
+      <h3 id="results"></h3>
+      <br />
+      <h4 id="message"></h4>
+    </div>
+  </body>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+    crossorigin="anonymous"
+  />
+  <script>
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+    function calculate() {
+      var lover1 = document.getElementById("lover1").value;
+      var lover2 = document.getElementById("lover2").value;
+      if (lover1 === "Love" && lover2 == "Calculator") {
+        window.location.href = "5.html";
+      } else {
+        results.innerText = Math.floor(Math.random() * 100 + 1) + "% !";
+        var key = Math.floor(Math.random() * 5 + 1);
+        var quote = "SDsasdF";
+        switch (key) {
+          case 1:
+            quote = "But you're not really looking for love, are you?";
+            break;
+          case 2:
+            quote =
+              "If you're looking for love, forget it. This is just a random number generator!";
+            break;
+          case 3:
+            quote =
+              "Seriously, you need a better outlet than entering your names here";
+            break;
+          case 4:
+            quote = "They're not worth it, yo, you're better than this!";
+            break;
+          default:
+            quote = "Wack lmao";
+            break;
+        }
+        message.innerText = quote;
+      }
+    }
+  </script>
+</html>
