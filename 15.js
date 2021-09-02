@@ -10,7 +10,7 @@
       var x = output.innerText;
       if (x === "69420") {
         // ye boi
-        window.location.href = "c74d97b01eae257e44aa9d5bade97baf.html";
+        window.location.href = "c74d97b01eae257e44aa9d5bade97baf";
       } else {
         output.innerText = output.innerText.substring(output.innerText.length);
       }

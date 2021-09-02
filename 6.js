@@ -61,7 +61,7 @@ function validateNumber() {
   
     if (isNaN(x) || x != 10) {
       text = "Input not valid";
-      location.replace("e4da3b7fbbce2345d7772b0674a318d5.html");
+      location.replace("e4da3b7fbbce2345d7772b0674a318d5");
     } else {
       text = "Good job!".bold();
       document.getElementById("valid").style.visibility = "visible";
@@ -70,7 +70,7 @@ function validateNumber() {
   }
 
   function changePage() {
-    location.replace("8f14e45fceea167a5a36dedd4bea2543.html");
+    location.replace("8f14e45fceea167a5a36dedd4bea2543");
   }
 
   document.addEventListener("contextmenu", function (e) {
