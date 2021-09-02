@@ -5,7 +5,7 @@ document.addEventListener("contextmenu", function (e) {
     var lover1 = document.getElementById("lover1").value;
     var lover2 = document.getElementById("lover2").value;
     if (lover1 === "Love" && lover2 == "Calculator") {
-      window.location.href = "c9f0f895fb98ab9159f51fd0297e236d.html";
+      window.location.href = "c9f0f895fb98ab9159f51fd0297e236d";
     } else if (lover1 || lover2) {
       results.innerText = Math.floor(Math.random() * 100 + 1) + "% !";
       var key = Math.floor(Math.random() * 7 + 1);

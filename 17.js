@@ -2,7 +2,7 @@ var ok=0;
 function lose() {
   if (ok === 1) {
     ok=0;
-  window.location.href = "6512bd43d9caa6e02c990b0a82652dca.html";
+  window.location.href = "6512bd43d9caa6e02c990b0a82652dca";
 }
 }
 function exit(){
@@ -15,7 +15,7 @@ function start() {
 
 function end() {
   if ( ok === 1 ){
-    window.location.href = "final.html";
+    window.location.href = "final";
   }
 
 }

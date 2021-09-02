@@ -11,7 +11,7 @@
         alert(
           "CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN " + guess + " GUESS "
         );
-        window.location.href = "6512bd43d9caa6e02c990b0a82652dca.html";
+        window.location.href = "6512bd43d9caa6e02c990b0a82652dca";
       } else if (x > y) {
         alert("OOPS SORRY!! TRY A SMALLER NUMBER");
       } else {

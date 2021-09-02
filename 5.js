@@ -10,9 +10,9 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         setTimeout(function(){
           if(dice1 + dice2 < 8)
           {
-            window.location.replace("a87ff679a2f3e71d9181a67b7542122c.html");
+            window.location.replace("a87ff679a2f3e71d9181a67b7542122c");
         }else {
-            window.location.replace("1679091c5a880faf6fb5e6087eb1b2dc.html");
+            window.location.replace("1679091c5a880faf6fb5e6087eb1b2dc");
           }
         },2000);
 
